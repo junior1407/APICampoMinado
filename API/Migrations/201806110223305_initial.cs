@@ -3,7 +3,7 @@ namespace API.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreate : DbMigration
+    public partial class initial : DbMigration
     {
         public override void Up()
         {
@@ -15,7 +15,7 @@ namespace API.Migrations
                         Name = c.String(),
                         Score = c.Int(nullable: false),
                         Time = c.Int(nullable: false),
-                        dateTime = c.DateTime(nullable: false),
+                        dateTime = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

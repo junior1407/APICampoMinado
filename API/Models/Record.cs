@@ -12,6 +12,6 @@ namespace API.Models
         public string Name { get; set; }
         public int Score { get; set; }
         public int Time { get; set; }
-        public DateTime dateTime{ get; set; }
+        public string dateTime{ get; set; }
     }
 }
